@@ -84,6 +84,8 @@ eda-poc/
 | `pnpm build` | Build libs + all apps (Turbo) |
 | `pnpm dev` | Watch all packages |
 | `pnpm --filter @eda/<service> start:dev` | Run a single service |
+| `pnpm ports:kill` | Kill processes on ports 3001–3008 |
+| `pnpm ports:kill -- 3001 3004` | Kill processes on specific ports |
 
 ### Environment
 

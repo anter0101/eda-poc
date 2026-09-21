@@ -15,7 +15,8 @@
     "format": "prettier --write \"**/*.{ts,mjs,json,md,yml,yaml}\"",
     "infra:up": "docker compose --env-file .env.development up -d",
     "infra:down": "docker compose --env-file .env.development down",
-    "infra:logs": "docker compose --env-file .env.development logs -f"
+    "infra:logs": "docker compose --env-file .env.development logs -f",
+    "ports:kill": "node scripts/kill-ports.mjs"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",

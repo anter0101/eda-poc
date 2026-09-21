@@ -1,9 +1,9 @@
-﻿import { Module } from '@nestjs/common';
+import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { MessagingModule } from '@eda/messaging';
-import PostgresTypeorm from 'src/config/db-config';
-import { HealthModule } from 'src/app/modules/health/health.module';
+import PostgresTypeorm from '@/config/db-config';
+import { HealthModule } from '@/app/modules/health/health.module';
 
 @Module({
   imports: [
